@@ -1,0 +1,135 @@
+{
+  "project_name": "WaitTime",
+  "design_philosophy": {
+    "identity": "The Anti-Bureaucracy Interface. We turn the stress of 'waiting in line' into a calm, predictable experience. The design is breathable, organic, and efficient—like a well-organized airport lounge, not a DMV.",
+    "core_principles": [
+      "Clarity over Decoration: Data (time) is the hero.",
+      "Calm Efficiency: Use organic colors to soothe anxiety.",
+      "Community Driven: Make contributions (check-ins) feel like a civic duty/heroic act.",
+      "Mobile First Utility: Thumb-friendly navigation, large touch targets."
+    ]
+  },
+  "typography": {
+    "font_family_heading": "Manrope, sans-serif",
+    "font_family_body": "Inter, sans-serif",
+    "scale": {
+      "h1": "text-4xl md:text-5xl font-bold tracking-tight leading-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold tracking-normal",
+      "body_lg": "text-lg leading-relaxed text-muted-foreground",
+      "body_base": "text-base leading-relaxed",
+      "caption": "text-sm font-medium tracking-wide uppercase text-muted-foreground"
+    },
+    "instructions": "Import 'Manrope' from Google Fonts. Use it for all Headings. Use 'Inter' for body text. Avoid using Manrope for long paragraphs."
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "background": "#FAFAF9", 
+      "foreground": "#1C1917", 
+      "card": "#FFFFFF",
+      "card_foreground": "#1C1917",
+      "popover": "#FFFFFF",
+      "popover_foreground": "#1C1917",
+      "primary": "#064E3B", 
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#E7E5E4", 
+      "secondary_foreground": "#1C1917",
+      "muted": "#F5F5F4",
+      "muted_foreground": "#78716C",
+      "accent": "#D1FAE5", 
+      "accent_foreground": "#064E3B",
+      "destructive": "#EF4444",
+      "destructive_foreground": "#FFFFFF",
+      "border": "#E7E5E4",
+      "input": "#E7E5E4",
+      "ring": "#064E3B"
+    },
+    "status_colors": {
+      "low_traffic": "#059669", 
+      "medium_traffic": "#D97706", 
+      "high_traffic": "#DC2626", 
+      "unknown": "#A8A29E" 
+    },
+    "usage_rules": [
+      "Background is Warm Stone (#FAFAF9), not pure white.",
+      "Primary Button is Deep Emerald (#064E3B).",
+      "Use 'secondary' for tag backgrounds.",
+      "Use 'accent' (Mint Green) for active states or highlights."
+    ]
+  },
+  "spacing_and_layout": {
+    "container_padding": "p-6 md:p-12",
+    "card_padding": "p-6",
+    "grid_gap": "gap-6",
+    "radius": {
+      "default": "rounded-xl",
+      "button": "rounded-full",
+      "input": "rounded-xl"
+    },
+    "max_width": "max-w-md md:max-w-2xl lg:max-w-5xl mx-auto"
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground shadow-lg hover:translate-y-[-2px] transition-all duration-200 active:scale-95 font-semibold px-8 py-3 rounded-full",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 font-medium px-6 py-3 rounded-full",
+      "ghost": "hover:bg-accent hover:text-accent-foreground font-medium px-4 py-2 rounded-lg"
+    },
+    "cards": {
+      "default": "bg-card border border-border shadow-sm rounded-xl p-6 hover:shadow-md transition-shadow duration-300",
+      "flat": "bg-muted/50 border-none rounded-2xl p-4",
+      "interactive": "cursor-pointer hover:border-primary/50 hover:bg-accent/5 transition-colors duration-200"
+    },
+    "inputs": {
+      "default": "h-12 px-4 rounded-xl border-input bg-background focus:ring-2 focus:ring-ring focus:border-transparent transition-all shadow-sm"
+    },
+    "navigation": {
+      "bottom_bar": "fixed bottom-0 left-0 right-0 bg-white/80 backdrop-blur-xl border-t border-border p-4 flex justify-around items-center z-50 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]",
+      "top_bar": "sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border p-4 flex justify-between items-center"
+    }
+  },
+  "assets": {
+    "icons": "Use 'lucide-react' for all UI icons. Use 'Phosphor Icons' (via @phosphor-icons/react) if Lucide lacks a specific metaphor.",
+    "images": {
+      "hero_main": "https://images.unsplash.com/photo-1758273237619-47928cb9d73e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHw0fHxoYXBweSUyMHBlcnNvbiUyMGhvbGRpbmclMjBwaG9uZSUyMHN0cmVldHxlbnwwfHx8fDE3NzM0ODM2OTF8MA&ixlib=rb-4.1.0&q=85",
+      "categories": {
+        "bank": "https://images.unsplash.com/photo-1768270181430-3e3672a32283?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBiYW5rJTIwaW50ZXJpb3IlMjBvZmZpY2UlMjBidWlsZGluZ3xlbnwwfHx8fDE3NzM0ODM2OTB8MA&ixlib=rb-4.1.0&q=85",
+        "office": "https://images.unsplash.com/photo-1758448721149-aa0ce8e1b2c9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBiYW5rJTIwaW50ZXJpb3IlMjBvZmZpY2UlMjBidWlsZGluZ3xlbnwwfHx8fDE3NzM0ODM2OTB8MA&ixlib=rb-4.1.0&q=85",
+        "general_city": "https://images.unsplash.com/photo-1758273237946-26d40a31f02a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwyfHxoYXBweSUyMHBlcnNvbiUyMGhvbGRpbmclMjBwaG9uZSUyMHN0cmVldHxlbnwwfHx8fDE3NzM0ODM2OTF8MA&ixlib=rb-4.1.0&q=85"
+      },
+      "map_pin_style": "Use CSS-based markers: A pulsing dot (bg-primary) with a larger semi-transparent ring."
+    }
+  },
+  "motion": {
+    "micro_interactions": "All buttons must scale down slightly (active:scale-95) on click. List items should stagger-fade-in on load.",
+    "page_transitions": "Use simple opacity fade (0.3s ease-out). Avoid heavy sliding transitions that feel native-app-like but lag on web.",
+    "loading": "Use Skeleton loaders (Shadcn) that match the card layout exactly. No spinning wheels for page loads."
+  },
+  "libraries": {
+    "charts": "Recharts (for 'Best Time to Visit' bar charts).",
+    "maps": "Leaflet (react-leaflet) or Mapbox (if key available). Use OpenStreetMap tiles for free usage.",
+    "toasts": "Sonner",
+    "icons": "lucide-react"
+  },
+  "accessibility": {
+    "contrast": "Ensure text on 'status' badges (Green/Red/Yellow) has sufficient contrast. Use dark text on yellow backgrounds.",
+    "touch_targets": "All interactive elements must be at least 44x44px. Add invisible padding to small icon buttons.",
+    "labels": "All icon-only buttons (like 'Search' or 'Filter') MUST have aria-label."
+  },
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds. Use flat, warm greys or textures.",
+    "Do not center-align long text. Left-align for readability.",
+    "Use 24px-32px margins for mobile views.",
+    "Avoid 'native' alert dialogs. Use Shadcn Dialog/Drawer.",
+    "For the 'Crowd Level', use a visual gauge or progress bar, not just text.",
+    "Ensure the 'Check-in' button is the most prominent element on the Location Detail page."
+  ],
+  "instructions_to_main_agent": [
+    "1. Setup Tailwind config with the custom colors defined above.",
+    "2. Create a 'Layout' component that handles the bottom navigation and max-width constraints.",
+    "3. Build the 'LocationCard' component first—it's the core UI element.",
+    "4. Use 'lucide-react' for icons (MapPin, Clock, Users, TrendingUp, Search).",
+    "5. For the 'Best Time' chart, use a simple BarChart from Recharts with a custom tooltip.",
+    "6. Implement the 'Add Location' flow as a Drawer (Sheet) or a multi-step Dialog, not a separate page if possible."
+  ]
+}
